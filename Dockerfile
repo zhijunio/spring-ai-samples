@@ -9,7 +9,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests -B
 
 # Runtime stage
-FROM eclipse-temurin:25.0.4_7-jre-alpine
+FROM eclipse-temurin:25.0.5_8-jre-alpine
 WORKDIR /app
 
 # Create non-root user for security
